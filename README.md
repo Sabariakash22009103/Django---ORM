@@ -46,8 +46,8 @@ class Database(models.Model):
 class PatientAdmin(admin.ModelAdmin):
     list_display = ('Patient_id','Patient_name','Patient_age','email','Contact_number')
 ## OUTPUT
+![Screenshot_20230110_102356](https://user-images.githubusercontent.com/119390227/211465655-800ccfb1-8c5d-4dac-bf19-a2691d737f23.png)
 
-![image](https://user-images.githubusercontent.com/119390227/211465274-517bbd0f-ff3b-4945-b99b-2f8dbcef009e.png)
 
 ## RESULT
 Thus a Django application is successfully developed to store and retrieve data from a database using Object Relational Mapping (ORM)

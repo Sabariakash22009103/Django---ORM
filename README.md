@@ -37,14 +37,14 @@ from django.contrib import admin
 # Create your models here.
 
 class Database(models.Model):
-    Patient_id = models.CharField(max_length=8, primary_key=True ,help_text="Your Patient id")
-    Patient_name = models.CharField(max_length=100)
-    Patient_age = models.IntegerField()
+    Student_id = models.CharField(max_length=8, primary_key=True ,help_text="Your Student id")
+    student_name = models.CharField(max_length=100)
+    Student_age = models.IntegerField()
     email = models.EmailField()
     Contact_number = models.IntegerField()
 
-class PatientAdmin(admin.ModelAdmin):
-    list_display = ('Patient_id','Patient_name','Patient_age','email','Contact_number')
+class studentAdmin(admin.ModelAdmin):
+    list_display = ('Student_id','Student_name','Student_age','email','Contact_number')
 ## OUTPUT
 ![Screenshot_20230110_102356](https://user-images.githubusercontent.com/119390227/211465655-800ccfb1-8c5d-4dac-bf19-a2691d737f23.png)
 

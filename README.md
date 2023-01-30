@@ -45,7 +45,7 @@ from django.db import models
 from django.contrib import admin
 ```
 # Create your models here.
-
+```
 class Student(models.Model):
     referencenumber=models.CharField(max_length=10,help_text="Your Reference Number")
     name=models.CharField(max_length=100)
@@ -54,9 +54,10 @@ class Student(models.Model):
     email=models.EmailField()
 
 class StudentAdmin(admin.ModelAdmin):
-    list_display = ('referencenumber','name','age','department','email')
+  list_display = ('referencenumber','name','age','department','email')
+  ```
 # Register your models here.
-
+```
 class Database(models.Model):
     Student_id = models.CharField(max_length=8, primary_key=True ,help_text="Your Student id")
     student_name = models.CharField(max_length=100)
@@ -66,6 +67,7 @@ class Database(models.Model):
 
 class studentAdmin(admin.ModelAdmin):
     list_display = ('Student_id','Student_name','Student_age','email','Contact_number')
+  ```
 ## OUTPUT
 ![Screenshot_20230110_102356](https://user-images.githubusercontent.com/119390227/211465655-800ccfb1-8c5d-4dac-bf19-a2691d737f23.png)
 
